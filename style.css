@@ -1,0 +1,99 @@
+/* styles.css */
+
+/* Reset some default styles */
+body, h1, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set a background color for the body */
+  body {
+    background: url('julius-drost-sf8b4ucpdkg-unsplash.jpg') center center fixed;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+  
+  /* Center the title and buttons */
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensure full viewport height */
+    margin: 0;
+  }
+  
+  /* Style for the main title */
+  .main-title {
+    font-size: 3em;
+    color: #fefefe;
+    margin-bottom: 20px; /* Add some space between the title and the content container */
+    background-color: rgb(71, 70, 70); /* Use rgba for a blue background with 70% opacity */
+    padding: 10px 20px; /* Add padding for a clean design */
+    border-radius: 10px; /* Border radius for a rectangular circle effect */
+    text-align: center; /* Center the text within the bordered area */
+}
+  
+  /* Container for the "View List" button and the list */
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px; /* Set a maximum width for the content */
+    width: 90%; /* Set a width for the content */
+    margin: 0 auto; /* Center the content on the page */
+  }
+  
+  /* Style for action buttons */
+  .action-button {
+    font-size: 1em;
+    color: #fff;
+    background-color: rgb(101, 99, 99); /* Use a sleek blue color */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 0 10px; /* Add space between the button and the list */
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .action-button:hover {
+    background-color: #2980b9; /* Darken the color on hover */
+  }
+  
+  /* Scrolling container for the books list */
+  #books-list {
+    max-height: 400px; /* Set a maximum height for the list */
+    overflow-y: auto; /* Enable vertical scrolling if the list exceeds the height */
+  }
+  
+  /* Style for each book item */
+  .book-item {
+    background-color: #f4f4f4; /* Light gray background color */
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Light box shadow for a card-like effect */
+  }
+  
+  /* Style for book titles */
+  #books-list li strong {
+    color: #333;
+    font-size: 1.2em; /* Increase the font size for titles */
+  }
+  
+  /* Style for book author */
+  #books-list li p:first-child {
+    color: #666;
+    margin-bottom: 5px;
+    font-weight: bold; /* Make the author's name bold */
+  }
+  
+  /* Style for book descriptions */
+  #books-list li p:last-child {
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
